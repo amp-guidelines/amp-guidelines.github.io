@@ -1,0 +1,4 @@
+ function dynamicNotice() {
+    var div = document.getElementById('noticecontainer');
+    div.innerHTML += '<div class="bz-update-message-container" id="Notice"><div class="bz-update-message-icon"><img class="bz-update-message-info" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Info?scl=1&fmt=png-alpha"></div><div class="bz-update-message">The guideline templates were last updated: 15/06/2023 - 14:13 - please ensure you download the latest version.</div><div id="NoticeClose"><img class="bz-update-message-close" alt="Close" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Close?scl=1&fmt=png-alpha"></div></div>';
+ };
