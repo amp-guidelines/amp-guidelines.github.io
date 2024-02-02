@@ -1,4 +1,0 @@
- function dynamicHowTo() {
-    var div = document.getElementById('howtocontainer');
-    div.innerHTML += '<div class="bz-sub-header"><div class="bz-sub-header-text single_page_post" id="HowTo">How To Use</div></div><div class="bz-content-area"><div class="bz-howto-container"><div class="bz-howto-text">Please use the PSD template layers as demonstrated below. All layers are universally compatible and are locked in position. Please note that if the template has been modified or layers have been moved, the submitted artwork will be rejected.<br><br>For any issues with the templates please contact your account manager.<br><br></div><div class="bz-howto-img"><img src="https://asdagroceries.scene7.com/is/content/asdagroceries/4.%20Activity%20%26%20Design/1.%20Campaigns/Guidelines/AsdaGuidelines_Video_HowToUse_2.gif"></div></div></div>';
- };
