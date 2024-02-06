@@ -7,10 +7,10 @@ function updateNavigation() {
         $this = $(this);
         var theID = $this.attr("id");
         if ($this.offset().top - $(window).scrollTop() < 0) {
-            var s = $(window).scrollTop()-20,
+            var s = $(window).scrollTop()-0,
             d = $this.outerWidth(),
             c = $this.offset().top;
-            var scrollPercent = ((s-c) / (d)) * 200;
+            var scrollPercent = ((s-c) / (d)) * 100;
             var progresswidth = 0+scrollPercent;
             $("a[href='#" + theID + "']").prev().css({'width' : progresswidth+"%", 'display' : 'block'});
             $("a[href='#" + theID + "']").parents('.post_page_sidebar').addClass("current");
