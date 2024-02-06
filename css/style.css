@@ -248,7 +248,7 @@
 
     .post_progress {
         position: absolute;
-        width: 5px;
+        width: 0px;
         background: #538316;
         bottom: 0px;
         height: 5px;
