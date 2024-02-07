@@ -940,8 +940,7 @@
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        width: 350px;
-        width: max-content;
+        width: 310px;
         left: calc(100% + 10px);
         height: -webkit-fill-available;
         padding: 20px;
