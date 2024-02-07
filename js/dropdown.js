@@ -6,10 +6,10 @@ function updateNavigation() {
     contentSections.each(function () {
         $this = $(this);
         var theID = $this.attr("id");
-        if ($this.offset().top - $(window).scrollTop() < 0) {
-            var s = $(window).scrollTop()-0,
+        if ($this.offset().top + (-450) - $(window).scrollTop() < 0) {
+            var s = $(window).scrollTop(),
             d = $this.outerWidth(),
-            c = $this.offset().top;
+            c = $this.offset().top + (-450);
             var scrollPercent = ((s-c) / (d)) * 100;
             var progresswidth = 0+scrollPercent;
             $("a[href='#" + theID + "']").prev().css({'width' : progresswidth+"%", 'display' : 'block'});
@@ -19,7 +19,7 @@ function updateNavigation() {
             $("a[href='#" + theID + "']").parents('.post_page_sidebar').removeClass("current");
         }
     });
-} 
+}
 
 //  Menu JS
     
