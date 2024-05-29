@@ -1,0 +1,138 @@
+<style>
+/* Custom Asda Header */
+.footer__feedback, .asda-logo__text, .aside, .search-form, .navigation-menu, .top-menu, .header__menu, .header__search, .footer__top-list {
+display: none !important;
+}
+.header__wrapper {
+background: #f3f3f3 !important;
+padding-top: 18px;
+}
+.asda-logo {
+padding-top: 5px;
+}
+.asda-logo:after {
+content: "Campaigns";
+    font-size: 22px;
+    letter-spacing: .3px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #3d3d3d;
+    display: inline-block;
+    line-height: 34px;
+    margin-left: 7px;
+    padding-top: 2px;
+    white-space: nowrap;
+}
+ /* Theme */
+.header__wrapper {
+background: #0073b1 !important;
+}
+.header__logo .asda-icon--green-brand .asda-icon__draw {
+fill: #fff;
+}
+.header__logo .asda-logo:after {
+color: #fff !important;
+}
+.header, .header__hamburger-menu, .header__logo, .header__menu {
+height: unset;
+}
+.layout__section {
+margin-top: 20px !important;
+}
+.header__hamburger-menu {
+display: none;
+}
+
+
+/* Custom Asda Menu */
+
+.camp-menu-container {
+position: absolute;
+max-width: 500px;
+margin: auto;
+padding-right: 35px;
+top: 15px;
+color: #fff;
+font-weight: 700;
+font-size: 20px;
+right: 0;
+}
+.camp-menu-link {
+padding: 15px;
+border-radius: 5px;
+}
+.camp-menu {
+width: 250px;
+visibility: hidden;
+position: absolute;
+right: 0;
+top: 0;
+display: flex;
+top: 50px;
+right: 30px;
+flex-direction: column;
+font-size: 16px;
+background: #eee;
+padding: 20px;
+gap: 10px;
+border-radius: 5px;
+}
+.camp-menu a {
+text-decoration: none;
+color: #3d3d3d;
+}
+
+.camp-menu a:hover {
+color: #000;
+}
+
+
+.camp-menu-container:hover  .camp-menu{
+visibility: visible;
+}
+
+
+@media screen and (max-width:1392px){
+.camp-menu-container {
+padding-right: 30px;
+}
+}
+@media screen and (max-width:1024px){
+.camp-menu-container {
+top: 45px;
+}
+}
+
+
+.camp-menu-container:hover .camp-menu-link  {
+background: #3d3d3d;
+color: #eee;
+}
+.camp-menu-link {
+background: #eee;
+color: #3d3d3d;
+}
+.camp-menu {
+padding: 10px 0px; 
+z-index: 1;
+}
+.camp-menu a {
+padding: 10px;
+}
+.camp-menu a:hover {
+background: #3d3d3d;
+color: #eee !important;
+}
+</style>
+
+<div class="camp-menu-container">
+<div class="camp-menu-link">Menu</div>
+     <div class="camp-menu">
+          <a href="/event/branded-page-creator">Branded Page Creator</a>
+          <a href="/event/takeover-creator">Takeover Creator</a>
+          <a href="/event/competition-page-creator">Competition Page Creator</a>
+          <a href="/event/tools_contentchecker">Content Checker</a>
+          <a href="/event/banner-size-tool">Banner Size Tool</a>
+          <a href="/event/takeover-background-tool" target="_blank">Takeover Background Tool</a>
+     </div>
+</div>
