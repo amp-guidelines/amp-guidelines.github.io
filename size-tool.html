@@ -1,602 +1,612 @@
 <style>
-/* Custom Asda Header */
-.footer__feedback, .asda-logo__text, .aside, .search-form, .navigation-menu, .top-menu, .header__menu, .header__search, .footer__top-list {
-display: none !important;
-}
-.header__wrapper {
-background: #f3f3f3 !important;
-padding-top: 18px;
-}
-.asda-logo {
-padding-top: 5px;
-}
-.asda-logo:after {
-content: "Campaigns";
-    font-size: 22px;
-    letter-spacing: .3px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #3d3d3d;
-    display: inline-block;
-    line-height: 34px;
-    margin-left: 7px;
-    padding-top: 2px;
-    white-space: nowrap;
-}
- /* Theme */
-.header__wrapper {
-background: #0073b1 !important;
-}
-.header__logo .asda-icon--green-brand .asda-icon__draw {
-fill: #fff;
-}
-.header__logo .asda-logo:after {
-color: #fff !important;
-}
-.header, .header__hamburger-menu, .header__logo, .header__menu {
-height: unset;
-}
-.layout__section {
-margin-top: 20px !important;
-}
-.header__hamburger-menu {
-display: none;
-}
+    /* Custom Asda Header */
+    .footer__feedback,
+    .asda-logo__text,
+    .aside,
+    .search-form,
+    .navigation-menu,
+    .top-menu,
+    .header__menu,
+    .header__search,
+    .footer__top-list {
+        display: none !important;
+    }
+
+    .header__wrapper {
+        background: #f3f3f3 !important;
+        padding-top: 18px;
+    }
+
+    .asda-logo {
+        padding-top: 5px;
+    }
+
+    .asda-logo:after {
+        content: "Campaigns";
+        font-size: 22px;
+        letter-spacing: .3px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #3d3d3d;
+        display: inline-block;
+        line-height: 34px;
+        margin-left: 7px;
+        padding-top: 2px;
+        white-space: nowrap;
+    }
+
+    /* Theme */
+    .header__wrapper {
+        background: #0073b1 !important;
+    }
+
+    .header__logo .asda-icon--green-brand .asda-icon__draw {
+        fill: #fff;
+    }
+
+    .header__logo .asda-logo:after {
+        color: #fff !important;
+    }
+
+    .header,
+    .header__hamburger-menu,
+    .header__logo,
+    .header__menu {
+        height: unset;
+    }
+
+    .layout__section {
+        margin-top: 20px !important;
+    }
+
+    .header__hamburger-menu {
+        display: none;
+    }
 
 
-/* Custom Asda Menu */
+    /* Custom Asda Menu */
 
-.camp-menu-container {
-position: absolute;
-max-width: 500px;
-margin: auto;
-padding-right: 35px;
-top: 15px;
-color: #fff;
-font-weight: 700;
-font-size: 20px;
-right: 0;
-}
-.camp-menu-link {
-padding: 15px;
-border-radius: 5px;
-}
-.camp-menu {
-width: 250px;
-visibility: hidden;
-position: absolute;
-right: 0;
-top: 0;
-display: flex;
-top: 50px;
-right: 30px;
-flex-direction: column;
-font-size: 16px;
-background: #eee;
-padding: 20px;
-gap: 10px;
-border-radius: 5px;
-}
-.camp-menu a {
-text-decoration: none;
-color: #3d3d3d;
-}
+    .camp-menu-container {
+        position: absolute;
+        max-width: 500px;
+        margin: auto;
+        padding-right: 35px;
+        top: 15px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+        right: 0;
+    }
 
-.camp-menu a:hover {
-color: #000;
-}
+    .camp-menu-link {
+        padding: 15px;
+        border-radius: 5px;
+    }
 
+    .camp-menu {
+        width: 250px;
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        top: 50px;
+        right: 30px;
+        flex-direction: column;
+        font-size: 16px;
+        background: #eee;
+        padding: 20px;
+        gap: 10px;
+        border-radius: 5px;
+    }
 
-.camp-menu-container:hover  .camp-menu{
-visibility: visible;
-}
+    .camp-menu a {
+        text-decoration: none;
+        color: #3d3d3d;
+    }
+
+    .camp-menu a:hover {
+        color: #000;
+    }
 
 
-@media screen and (max-width:1392px){
-.camp-menu-container {
-padding-right: 30px;
-}
-}
-@media screen and (max-width:1024px){
-.camp-menu-container {
-top: 45px;
-}
-}
+    .camp-menu-container:hover .camp-menu {
+        visibility: visible;
+    }
 
 
-.camp-menu-container:hover .camp-menu-link  {
-background: #3d3d3d;
-color: #eee;
-}
-.camp-menu-link {
-background: #eee;
-color: #3d3d3d;
-}
-.camp-menu {
-padding: 10px 0px; 
-z-index: 1;
-}
-.camp-menu a {
-padding: 10px;
-}
-.camp-menu a:hover {
-background: #3d3d3d;
-color: #eee !important;
-}
+    @media screen and (max-width:1392px) {
+        .camp-menu-container {
+            padding-right: 30px;
+        }
+    }
+
+    @media screen and (max-width:1024px) {
+        .camp-menu-container {
+            top: 45px;
+        }
+    }
+
+
+    .camp-menu-container:hover .camp-menu-link {
+        background: #3d3d3d;
+        color: #eee;
+    }
+
+    .camp-menu-link {
+        background: #eee;
+        color: #3d3d3d;
+    }
+
+    .camp-menu {
+        padding: 10px 0px;
+        z-index: 1;
+    }
+
+    .camp-menu a {
+        padding: 10px;
+    }
+
+    .camp-menu a:hover {
+        background: #3d3d3d;
+        color: #eee !important;
+    }
 </style>
 
 <div class="camp-header">
     <div class="camp-header-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 34" data-di-res-id="f6f53b92-c531d40e" data-di-rand="1721732754798"><path class="asda-icon__draw" fill-rule="evenodd" d="M101.698 2.012H90.337l-6.479 18.752c.29-1.557.341-2.802.341-3.343 0-7.856-4.501-15.409-15.076-15.409H56.978l.036 18.653c-1.05-5.3-5.892-6.72-11.913-8.55-2.25-.693-3.486-1.794-3.035-2.82.385-.896 1.765-1.177 3.44-.946 2.554.366 4.594 1.22 6.558 2.289l2.684-6.651c-.605-.299-4.954-2.909-10.404-2.909-7.6 0-12.454 3.708-12.454 9.18 0 4.876 3.003 7.711 8.525 9.3 5.939 1.723 7.445 2.416 7.266 4.124-.154 1.472-3.835 3.265-12.841-2.276l-2.676 5.537-8.26-24.93H12.547L1.814 33.003h8.952L12.5 28H23l1.784 5.004h9.398l-1.066-3.031c3.177 1.836 7.117 3.517 11.83 3.517 7.22 0 11.123-3.943 12.054-7.722v7.236h12.11c7.219 0 10.995-3.442 12.968-7.126l-2.477 7.126h8.945L90.336 28H101l1.572 5.004h9.41L101.697 2.012zM14.5 21l3.338-10.648L21 21h-6.5zM66 25.012V10h2.135c3.043 0 6.365 1.232 6.365 7.506 0 5.557-2.934 7.506-6.339 7.506H66zM92.5 21l3.184-10.521L99 21h-6.5z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 34" data-di-res-id="f6f53b92-c531d40e" data-di-rand="1721732754798">
+            <path class="asda-icon__draw" fill-rule="evenodd" d="M101.698 2.012H90.337l-6.479 18.752c.29-1.557.341-2.802.341-3.343 0-7.856-4.501-15.409-15.076-15.409H56.978l.036 18.653c-1.05-5.3-5.892-6.72-11.913-8.55-2.25-.693-3.486-1.794-3.035-2.82.385-.896 1.765-1.177 3.44-.946 2.554.366 4.594 1.22 6.558 2.289l2.684-6.651c-.605-.299-4.954-2.909-10.404-2.909-7.6 0-12.454 3.708-12.454 9.18 0 4.876 3.003 7.711 8.525 9.3 5.939 1.723 7.445 2.416 7.266 4.124-.154 1.472-3.835 3.265-12.841-2.276l-2.676 5.537-8.26-24.93H12.547L1.814 33.003h8.952L12.5 28H23l1.784 5.004h9.398l-1.066-3.031c3.177 1.836 7.117 3.517 11.83 3.517 7.22 0 11.123-3.943 12.054-7.722v7.236h12.11c7.219 0 10.995-3.442 12.968-7.126l-2.477 7.126h8.945L90.336 28H101l1.572 5.004h9.41L101.697 2.012zM14.5 21l3.338-10.648L21 21h-6.5zM66 25.012V10h2.135c3.043 0 6.365 1.232 6.365 7.506 0 5.557-2.934 7.506-6.339 7.506H66zM92.5 21l3.184-10.521L99 21h-6.5z"></path>
+        </svg>
     </div>
-<div class="camp-menu-container">
-<div class="camp-menu-link">Menu</div>
-     <div class="camp-menu">
-          <a href="/event/branded-page-creator">Branded Page Creator</a>
-          <a href="/event/takeover-creator">Takeover Creator</a>
-          <a href="/event/competition-page-creator">Competition Page Creator</a>
-          <a href="/event/tools_contentchecker">Content Checker</a>
-          <a href="/event/banner-size-tool">Banner Size Tool</a>
-          <a href="/event/takeover-background-tool" target="_blank">Takeover Background Tool</a>
-     </div>
-</div>
+    <div class="camp-menu-container">
+        <div class="camp-menu-link">Menu</div>
+        <div class="camp-menu">
+            <a href="/event/branded-page-creator">Branded Page Creator</a>
+            <a href="/event/takeover-creator">Takeover Creator</a>
+            <a href="/event/competition-page-creator">Competition Page Creator</a>
+            <a href="/event/tools_contentchecker">Content Checker</a>
+            <a href="/event/banner-size-tool">Banner Size Tool</a>
+            <a href="/event/takeover-background-tool" target="_blank">Takeover Background Tool</a>
+        </div>
+    </div>
 </div>
 </div>
 
 <style>
-.example-text {
-font-family: Source Sans Pro,sans-serif;
-font-weight: 600;
-font-size: 9pt;
-}
-#overlayimageoutput {
-position: absolute;
-height: 100%;
-width: 100%;
-}
-#imageoutput {
-   visibility: hidden;
-    position: absolute;
-}
-.imagecontainer {
-position: relative;
-display: flex;
-text-align: center;
-width: fit-content;
-height: fit-content;
-max-width: 1400px;
-margin: auto;
-}
-.imagecontainer img {
-width: 100%;
-max-height: 400px
-}
-.tool-input {
-display: flex;
-border: 1px solid #000;
-}
-#showhide {
-    display: none;
-}
-.hide {
-background-color: #d43030;
-color: #fff;
-}
-.show {
-background-color: #0073B1;
-color: #fff;
-}
-.load-img-button {
-background-color: #0073B1;
-color: #fff;
-margin-right: 10px;
-}
-.load-button {
-background-color: #538316;
-color: #fff;
-}
-.positive::before {
-  content: '✓ ';
-}
-.negative::before {
-  content: '✘ ';
-}
-button {
-    background: #538316;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    height: 34px;
-    padding: 0 13px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 16px;
-    font-weight: 700;
-}
-.loader-container {
-    background: #f3f3f3;
-    border: #ccc 2px solid;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-}
-.loader-container input {
-    height: 35px;
-    width: 60%;
-    margin-right: 10px;
-}
-#showhide {
-    margin: 20px;
-}
-.hide-button-container {
-width: 100%;
-text-align: center;
-}
-    
-/* Image Preload */
-.image-preload {
-    position: absolute;
-    z-index: -999;
-    height: 0;
-    width: 0;
-}
-#preload-01 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_1x1_Green?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-02 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_DeptNav_Campaigns_1x2?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-03 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_PromoHB_Campaigns_2x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-04 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_3x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-05 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Billboard_Campaigns_4x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-06 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_8x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-07 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_10x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-08 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_16x9?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-09 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_Leaderboard?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
-#preload-10 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_MPU?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+    .example-text {
+        font-family: Source Sans Pro, sans-serif;
+        font-weight: 600;
+        font-size: 9pt;
+    }
 
+    #overlayimageoutput {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    #imageoutput {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .imagecontainer {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .imagecontainer img {
+        width: 100%;
+        max-height: 400px
+    }
+
+    .tool-input {
+        display: flex;
+        border: 1px solid #000;
+    }
+
+    #showhide {
+        display: none;
+    }
+
+    .hide {
+        background-color: #d43030;
+        color: #fff;
+    }
+
+    .show {
+        background-color: #0073B1;
+        color: #fff;
+    }
+
+    .load-img-button {
+        background-color: #0073B1;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    .load-button {
+        background-color: #538316;
+        color: #fff;
+    }
+
+    .positive::before {
+        content: '✓ ';
+    }
+
+    .negative::before {
+        content: '✘ ';
+    }
+
+    button {
+        background: #538316;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        height: 34px;
+        padding: 0 13px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .loader-container {
+        background: #f3f3f3;
+        border: #ccc 2px solid;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .loader-container input {
+        height: 35px;
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    #showhide {
+        margin: 20px;
+    }
+
+    .hide-button-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Image Preload */
+    .image-preload {
+        position: absolute;
+        z-index: -999;
+        height: 0;
+        width: 0;
+    }
+
+    #preload-01 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_1x1_Green?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-02 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_DeptNav_Campaigns_1x2?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-03 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_PromoHB_Campaigns_2x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-04 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_3x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-05 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Billboard_Campaigns_4x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-06 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_8x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-07 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_10x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-08 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_16x9?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-09 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_Leaderboard?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
+
+    #preload-10 {
+        background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_MPU?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;
+    }
 </style>
 
 <div class="content-container">
 
-<div class="image-preload">
-  <div id="preload-01"></div>
-  <div id="preload-02"></div>
-  <div id="preload-03"></div>
-  <div id="preload-04"></div>
-  <div id="preload-05"></div>
-  <div id="preload-06"></div>
-  <div id="preload-07"></div>
-  <div id="preload-08"></div>
-  <div id="preload-09"></div>
-  <div id="preload-10"></div>
+    <div class="image-preload">
+        <div id="preload-01"></div>
+        <div id="preload-02"></div>
+        <div id="preload-03"></div>
+        <div id="preload-04"></div>
+        <div id="preload-05"></div>
+        <div id="preload-06"></div>
+        <div id="preload-07"></div>
+        <div id="preload-08"></div>
+        <div id="preload-09"></div>
+        <div id="preload-10"></div>
+    </div>
+
+
+    <h2>Banner Size Checker Tool</h2><br>
+
+    <div class="loader-container">
+        <label for="fname">Image: </label><input id="imageid" onchange="summation()">
+
+        <button class="load-img-button" onclick="summation();loader();showhidebtn();">Load Image</button>
+
+        <button class="load-button" onclick="summation();loader();showhidebtn();">Refresh Overlay</button>
+
+    </div>
+    <div class="hide-button-container">
+        <button class="hide" id="showhide" onclick="myFunction()">Hide Overlay</button>
+    </div>
+
+    <img id="imageoutput" src="">
+
+    <div class="imagecontainer">
+        <img id="overlayimageoutput" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1">
+        <img id="imageoutputrender" src="">
+    </div>
+    <br><br>
+    <div class="example-text">Example of 9pt text</div>
+    <br>
+    Height: <span id="height"></span>
+    <br><br>
+    Width: <span id="width"></span>
+    <br><br>
+    Detected Template: <span id="detect" class=""></span>
+    <br><br>
+
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_1x2_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_3x1_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_4x1_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_8x1_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_10x1_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_16x9_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_Leaderboard_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_MPU_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_1x1_Example.png
+    <br>
+    <br>
+
+    https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_2x1_Example.png
+    <br>
+    <br>
+
+
 </div>
-
-
-<h2>Banner Size Checker Tool</h2><br>
-
-<div class="loader-container">
-<label for="fname">Image: </label><input id="imageid"  onchange="summation()">
-
-<button class="load-img-button" onclick="summation();loader();showhidebtn();">Load Image</button>
-
-<button class="load-button" onclick="summation();loader();showhidebtn();">Refresh Overlay</button>
-
-</div>
-<div class="hide-button-container">
-    <button class="hide" id="showhide" onclick="myFunction()">Hide Overlay</button>
-</div>
-
-<img id="imageoutput" src="">
-
-<div class="imagecontainer">
-    <img id="overlayimageoutput" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1">
-    <img id="imageoutputrender" src="">
-</div>
-<br><br>
-<div class="example-text">Example of 9pt text</div>
-<br>
-Height: <span id="height"></span>
-<br><br>
-Width: <span id="width"></span>
-<br><br>
-Detected Template: <span id="detect" class=""></span>
-<br><br>
-
-
-
-
-
-
-
-
-
-
 
 
 <script>
-function loader() {    
-    //or however you get a handle to the IMG
-    var widthV = document.getElementById('imageoutput').clientWidth;
-    var heightV = document.getElementById('imageoutput').clientHeight;
-    
-    document.getElementById('width').innerHTML = widthV;
-    document.getElementById('height').innerHTML = heightV;
+    function loader() {
+        //or however you get a handle to the IMG
+        var widthV = document.getElementById('imageoutput').clientWidth;
+        var heightV = document.getElementById('imageoutput').clientHeight;
 
-    if (widthV == 540 && heightV == 300 ) {
-      document.getElementById('detect').innerHTML = "IAB_FullPageL_CatNav";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 1848 && heightV == 1000 ) {
-      document.getElementById('detect').innerHTML = "IAB_Expandable_Landscape/Brandbust Stage 2 Landscape";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 540 && heightV == 860 ) {
-      document.getElementById('detect').innerHTML = "IAB_Expandable_Portrait";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 1064 && heightV == 266 ) {
-      document.getElementById('detect').innerHTML = "IAB_Billboard";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 300 && heightV == 300 ) {
-      document.getElementById('detect').innerHTML = "IAB_Tile";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 728 && heightV == 90 ) {
-      document.getElementById('detect').innerHTML = "IAB_Leaderboard";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 300 && heightV == 250 ) {
-      document.getElementById('detect').innerHTML = "IAB_MPU/Homepage Tile";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 540 && heightV == 300 ) {
-      document.getElementById('detect').innerHTML = "IAB_FullPageL_CatNav";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 300 && heightV == 540 ) {
-      document.getElementById('detect').innerHTML = "IAB_FullPageP_DeptNav";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 900 && heightV == 450 ) {
-      document.getElementById('detect').innerHTML = "IAB_HalfPageL_ShopNav";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 144 && heightV == 409 ) {
-      document.getElementById('detect').innerHTML = "MPP";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 329 && heightV == 409 ) {
-      document.getElementById('detect').innerHTML = "PromoFB/Ad Flipper";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 195 && heightV == 409 ) {
-      document.getElementById('detect').innerHTML = "PromoHB";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 169 && heightV == 318 ) {
-      document.getElementById('detect').innerHTML = "SBA";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 130 && heightV == 361 ) {
-      document.getElementById('detect').innerHTML = "TrolleyHB";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 1848 && heightV == 1000 ) { 
-      document.getElementById('detect').innerHTML = "IAB_Expandable_Landscape";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 540 && heightV == 860 ) { 
-      document.getElementById('detect').innerHTML = "IAB_Expandable_Portrait";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 409 && heightV == 299 ) { 
-      document.getElementById('detect').innerHTML = "Win Panel";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 280 && heightV == 280 ) { 
-      document.getElementById('detect').innerHTML = "Brand burst Stage 1";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 1124 && heightV == 1756 ) { 
-      document.getElementById('detect').innerHTML = "Brand burst Stage 2 Portrait";
-      document.getElementById('detect').style.color = 'green';
-    }
-     else if (widthV == 658 && heightV == 818 ) { 
-      document.getElementById('detect').innerHTML = "Prism";
-      document.getElementById('detect').style.color = 'green';
-    }
-     else if (widthV == 600 && heightV == 2000 ) { 
-      document.getElementById('detect').innerHTML = "Parascroll";
-      document.getElementById('detect').style.color = 'green';
-    }
-    else if (widthV == 185 && heightV == 290 ) {
-      document.getElementById('detect').innerHTML = "Old SBA Template - Supplier Must Resupply";
-      document.getElementById('detect').style.color = 'red';
+        document.getElementById('width').innerHTML = widthV;
+        document.getElementById('height').innerHTML = heightV;
+
+        if (widthV == 540 && heightV == 300) {
+            document.getElementById('detect').innerHTML = "IAB_FullPageL_CatNav";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 1848 && heightV == 1000) {
+            document.getElementById('detect').innerHTML = "IAB_Expandable_Landscape/Brandbust Stage 2 Landscape";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 540 && heightV == 860) {
+            document.getElementById('detect').innerHTML = "IAB_Expandable_Portrait";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 1064 && heightV == 266) {
+            document.getElementById('detect').innerHTML = "IAB_Billboard";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 300 && heightV == 300) {
+            document.getElementById('detect').innerHTML = "IAB_Tile";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 728 && heightV == 90) {
+            document.getElementById('detect').innerHTML = "IAB_Leaderboard";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 300 && heightV == 250) {
+            document.getElementById('detect').innerHTML = "IAB_MPU/Homepage Tile";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 540 && heightV == 300) {
+            document.getElementById('detect').innerHTML = "IAB_FullPageL_CatNav";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 300 && heightV == 540) {
+            document.getElementById('detect').innerHTML = "IAB_FullPageP_DeptNav";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 900 && heightV == 450) {
+            document.getElementById('detect').innerHTML = "IAB_HalfPageL_ShopNav";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 144 && heightV == 409) {
+            document.getElementById('detect').innerHTML = "MPP";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 329 && heightV == 409) {
+            document.getElementById('detect').innerHTML = "PromoFB/Ad Flipper";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 195 && heightV == 409) {
+            document.getElementById('detect').innerHTML = "PromoHB";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 169 && heightV == 318) {
+            document.getElementById('detect').innerHTML = "SBA";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 130 && heightV == 361) {
+            document.getElementById('detect').innerHTML = "TrolleyHB";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 1848 && heightV == 1000) {
+            document.getElementById('detect').innerHTML = "IAB_Expandable_Landscape";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 540 && heightV == 860) {
+            document.getElementById('detect').innerHTML = "IAB_Expandable_Portrait";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 409 && heightV == 299) {
+            document.getElementById('detect').innerHTML = "Win Panel";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 280 && heightV == 280) {
+            document.getElementById('detect').innerHTML = "Brand burst Stage 1";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 1124 && heightV == 1756) {
+            document.getElementById('detect').innerHTML = "Brand burst Stage 2 Portrait";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 658 && heightV == 818) {
+            document.getElementById('detect').innerHTML = "Prism";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 600 && heightV == 2000) {
+            document.getElementById('detect').innerHTML = "Parascroll";
+            document.getElementById('detect').style.color = 'green';
+        } else if (widthV == 185 && heightV == 290) {
+            document.getElementById('detect').innerHTML = "Old SBA Template - Supplier Must Resupply";
+            document.getElementById('detect').style.color = 'red';
+        } else if (widthV == 900 && heightV == 900) {
+            document.getElementById('detect').innerHTML = "1x1";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_1x1_Green?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 450 && heightV == 900) {
+            document.getElementById('detect').innerHTML = "1x2";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_DeptNav_Campaigns_1x2?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 1800 && heightV == 900) {
+            document.getElementById('detect').innerHTML = "2x1";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_PromoHB_Campaigns_2x1?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 1800 && heightV == 600) {
+            document.getElementById('detect').innerHTML = "3x1";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_3x1?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 1800 && heightV == 450) {
+            document.getElementById('detect').innerHTML = "4x1";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Billboard_Campaigns_4x1?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 3600 && heightV == 450) {
+            document.getElementById('detect').innerHTML = "8x1";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_8x1?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 4320 && heightV == 450) {
+            document.getElementById('detect').innerHTML = "10x1";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_10x1?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 1800 && heightV == 1012) {
+            document.getElementById('detect').innerHTML = "16x9";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_16x9?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 1456 && heightV == 180) {
+            document.getElementById('detect').innerHTML = "Leaderboard";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_Leaderboard?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else if (widthV == 600 && heightV == 500) {
+            document.getElementById('detect').innerHTML = "MPU";
+            document.getElementById('detect').style.color = 'green';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_MPU?scl=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.add("positive");
+        } else {
+            document.getElementById('detect').innerHTML = "Template Not Detected";
+            document.getElementById('detect').style.color = 'red';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("positive");
+            detectStatus.classList.add("negative");
+        }
     }
 
-    
-    else if (widthV == 900 && heightV == 900 ) {
-      document.getElementById('detect').innerHTML = "1x1";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_1x1_Green?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
+    function summation() {
+        var imageid = document.getElementById('imageid').value;
+        document.getElementById("imageoutput").src = imageid;
+        document.getElementById("imageoutputrender").src = imageid;
+    }
+
+    function myFunction() {
+        var x = document.getElementById("overlayimageoutput");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            var element = document.getElementById("showhide");
+            element.classList.remove("show");
+            element.classList.add("hide");
+            element.innerHTML = "Hide Overlay";
+        } else {
+            x.style.display = "none";
+            var element = document.getElementById("showhide");
+            element.classList.remove("hide");
+            element.classList.add("show");
+            element.innerHTML = "Show Overlay";
+        }
+    }
+
+    function showhidebtn() {
+        document.getElementById('showhide').style.display = 'inline';
     }
     
-    else if (widthV == 450 && heightV == 900 ) {
-      document.getElementById('detect').innerHTML = "1x2";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_DeptNav_Campaigns_1x2?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }    
-    else if (widthV == 1800 && heightV == 900 ) {
-      document.getElementById('detect').innerHTML = "2x1";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_PromoHB_Campaigns_2x1?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }   
-    else if (widthV == 1800 && heightV == 600 ) {
-      document.getElementById('detect').innerHTML = "3x1";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_3x1?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }   
-    else if (widthV == 1800 && heightV == 450 ) {
-      document.getElementById('detect').innerHTML = "4x1";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Billboard_Campaigns_4x1?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }   
-    else if (widthV == 3600 && heightV == 450 ) {
-      document.getElementById('detect').innerHTML = "8x1";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_8x1?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }   
-    
-    else if (widthV == 4320 && heightV == 450 ) {
-      document.getElementById('detect').innerHTML = "10x1";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_10x1?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }   
-    
-    else if (widthV == 1800 && heightV == 1012 ) {
-      document.getElementById('detect').innerHTML = "16x9";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_16x9?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }  
-    else if (widthV == 1456 && heightV == 180 ) {
-      document.getElementById('detect').innerHTML = "Leaderboard";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_Leaderboard?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }       
-    
-    else if (widthV == 600 && heightV == 500 ) {
-      document.getElementById('detect').innerHTML = "MPU";
-      document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_MPU?scl=1&fmt=png-alpha';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("negative");
-          detectStatus.classList.add("positive");
-    }     
-    
-    else {
-      document.getElementById('detect').innerHTML = "Template Not Detected";
-      document.getElementById('detect').style.color = 'red';
-          var detectStatus = document.getElementById("detect");
-          detectStatus.classList.remove("positive");
-          detectStatus.classList.add("negative");
-    }    
-}    
-    
-function summation() {
-    var imageid = document.getElementById('imageid').value;
-    document.getElementById("imageoutput").src = imageid;
-    document.getElementById("imageoutputrender").src = imageid;
-}
-    
-function myFunction() {
-  var x = document.getElementById("overlayimageoutput");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-      var element = document.getElementById("showhide");
-      element.classList.remove("show");
-      element.classList.add("hide");
-      element.innerHTML = "Hide Overlay";
-  } else {
-    x.style.display = "none";
-      var element = document.getElementById("showhide");
-      element.classList.remove("hide");
-      element.classList.add("show");
-      element.innerHTML = "Show Overlay";
-  }
-}
-    
-function showhidebtn() {
-     document.getElementById('showhide').style.display = 'inline';
-}
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_1x2_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_3x1_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_4x1_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_8x1_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_10x1_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_16x9_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_Leaderboard_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_MPU_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_1x1_Example.png
-<br>
-<br>
-
-https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_2x1_Example.png
-<br>
-<br>
-
-
-</div>
