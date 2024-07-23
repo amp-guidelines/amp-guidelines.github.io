@@ -165,6 +165,7 @@ margin: auto;
 }
 .imagecontainer img {
 width: 100%;
+max-height: 400px
 }
 .tool-input {
 display: flex;
@@ -180,6 +181,11 @@ color: #fff;
 .show {
 background-color: #0073B1;
 color: #fff;
+}
+.load-img-button {
+background-color: #0073B1;
+color: #fff;
+margin-right: 10px;
 }
 .load-button {
 background-color: #538316;
@@ -227,14 +233,49 @@ button {
 width: 100%;
 text-align: center;
 }
+    
+/* Image Preload */
+.image-preload {
+    position: absolute;
+    z-index: -999;
+    height: 0;
+    width: 0;
+}
+#preload-01 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_1x1_Green?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-02 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_DeptNav_Campaigns_1x2?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-03 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_PromoHB_Campaigns_2x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-04 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_3x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-05 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Billboard_Campaigns_4x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-06 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_8x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-07 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_10x1?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-08 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_16x9?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-09 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_Leaderboard?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+#preload-10 {background: url(https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_MPU?scl=1&fmt=png-alpha) no-repeat -9999px -9999px;}
+
 </style>
+
+<div class="image-preload">
+  <div id="preload-01"></div>
+  <div id="preload-02"></div>
+  <div id="preload-03"></div>
+  <div id="preload-04"></div>
+  <div id="preload-05"></div>
+  <div id="preload-06"></div>
+  <div id="preload-07"></div>
+  <div id="preload-08"></div>
+  <div id="preload-09"></div>
+  <div id="preload-10"></div>
+</div>
+
 
 <h2>Banner Size Checker Tool</h2><br>
 
 <div class="loader-container">
 <label for="fname">Image: </label><input id="imageid"  onchange="summation()">
 
-<button class="load-button" onclick="summation();loader();showhidebtn();">Load</button>
+<button class="load-img-button" onclick="summation();loader();showhidebtn();">Load Image</button>
+
+<button class="load-button" onclick="summation();loader();showhidebtn();">Refresh Overlay</button>
 
 </div>
 <div class="hide-button-container">
@@ -374,15 +415,16 @@ function loader() {
     else if (widthV == 900 && heightV == 900 ) {
       document.getElementById('detect').innerHTML = "1x1";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_1x1.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_1x1_Green?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
     }
+    
     else if (widthV == 450 && heightV == 900 ) {
       document.getElementById('detect').innerHTML = "1x2";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_1x2.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_DeptNav_Campaigns_1x2?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
@@ -390,7 +432,7 @@ function loader() {
     else if (widthV == 1800 && heightV == 900 ) {
       document.getElementById('detect').innerHTML = "2x1";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_2x1.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_PromoHB_Campaigns_2x1?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
@@ -398,7 +440,7 @@ function loader() {
     else if (widthV == 1800 && heightV == 600 ) {
       document.getElementById('detect').innerHTML = "3x1";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_3x1.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_3x1?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
@@ -406,7 +448,7 @@ function loader() {
     else if (widthV == 1800 && heightV == 450 ) {
       document.getElementById('detect').innerHTML = "4x1";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_4x1.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Billboard_Campaigns_4x1?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
@@ -414,43 +456,47 @@ function loader() {
     else if (widthV == 3600 && heightV == 450 ) {
       document.getElementById('detect').innerHTML = "8x1";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_8x1.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_8x1?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
     }   
+    
     else if (widthV == 4320 && heightV == 450 ) {
       document.getElementById('detect').innerHTML = "10x1";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_10x1.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_10x1?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
     }   
+    
     else if (widthV == 1800 && heightV == 1012 ) {
       document.getElementById('detect').innerHTML = "16x9";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_16x9.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_16x9?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
-    }   
+    }  
     else if (widthV == 1456 && heightV == 180 ) {
       document.getElementById('detect').innerHTML = "Leaderboard";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_Leaderboard.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_Leaderboard?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
-    }   
+    }       
+    
     else if (widthV == 600 && heightV == 500 ) {
       document.getElementById('detect').innerHTML = "MPU";
       document.getElementById('detect').style.color = 'green';
-      document.getElementById("overlayimageoutput").src = 'https://raw.githubusercontent.com/amp-guidelines/amp-guidelines.github.io/main/images/AsdaGuidelines_TemplateOverlay_MPU.png';
+      document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AMP_Amplience_Guidelines_OverlayImage_Campaigns_MPU?scl=1&fmt=png-alpha';
           var detectStatus = document.getElementById("detect");
           detectStatus.classList.remove("negative");
           detectStatus.classList.add("positive");
-    }   
+    }     
+    
     else {
       document.getElementById('detect').innerHTML = "Template Not Detected";
       document.getElementById('detect').style.color = 'red';
@@ -488,6 +534,13 @@ function showhidebtn() {
 }
 
 </script>
+
+
+
+
+
+
+
 
 
 
