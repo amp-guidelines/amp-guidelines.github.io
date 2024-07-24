@@ -621,18 +621,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     
     function summation() {
         var imageid = document.getElementById('imageid').value;
@@ -659,14 +647,14 @@
 
     function hideImage() {
         var x = document.getElementById("imageoutputrender");
-        if (x.style.display === "none") {
-            x.style.display = "block";
+        if (x.style.visibility === "hidden") {
+            x.style.visibility = "visible";
             var element = document.getElementById("showhide");
             element.classList.remove("show");
             element.classList.add("hide");
             element.innerHTML = "Hide Image";
         } else {
-            x.style.display = "none";
+            x.style.visibility = "hidden";
             var element = document.getElementById("showhide");
             element.classList.remove("hide");
             element.classList.add("show");
