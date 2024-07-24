@@ -400,7 +400,8 @@
 
     </div>
     <div class="hide-button-container">
-        <button class="hide" id="showhide" onclick="myFunction()">Hide Overlay</button>
+        <button class="hide" id="showhide" onclick="hideOverlay()">Hide Overlay</button>
+        <button class="hide" id="showhide" onclick="hideImage()">Hide Image</button>
     </div>
 
     <img id="imageoutput" src="">
@@ -639,7 +640,7 @@
         document.getElementById("imageoutputrender").src = imageid;
     }
 
-    function myFunction() {
+    function hideOverlay() {
         var x = document.getElementById("overlayimageoutput");
         if (x.style.display === "none") {
             x.style.display = "block";
@@ -656,6 +657,24 @@
         }
     }
 
+    function hideImage() {
+        var x = document.getElementById("imageoutputrender");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            var element = document.getElementById("showhide");
+            element.classList.remove("show");
+            element.classList.add("hide");
+            element.innerHTML = "Hide Image";
+        } else {
+            x.style.display = "none";
+            var element = document.getElementById("showhide");
+            element.classList.remove("hide");
+            element.classList.add("show");
+            element.innerHTML = "Show Image";
+        }
+    }    
+
+    
     function showhidebtn() {
         document.getElementById('showhide').style.display = 'inline';
     }
