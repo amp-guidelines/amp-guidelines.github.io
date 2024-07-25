@@ -275,7 +275,11 @@
         background-color: #538316;
         color: #fff;
     }
-
+    
+    .legacy::before {
+        content: '⚠️ ';
+    }
+    
     .positive::before {
         content: '✓ ';
     }
@@ -487,6 +491,10 @@
         } else if (widthV == 1064 && heightV == 266) {
             document.getElementById('detect').innerHTML = "Legacy - IAB_Billboard";
             document.getElementById('detect').style.color = '#ff8200';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("positive");
+            detectStatus.classList.add("legacy");
         } else if (widthV == 300 && heightV == 300) {
             document.getElementById('detect').innerHTML = "Legacy - IAB_Tile";
             document.getElementById('detect').style.color = '#ff8200';
