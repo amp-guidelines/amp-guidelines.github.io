@@ -717,9 +717,9 @@
             document.getElementById('detect').innerHTML = "Template Not Detected";
             document.getElementById('detect').style.color = '#d43030';
             var detectStatus = document.getElementById("detect");
-            detectStatus.classList.remove("negative");
             detectStatus.classList.remove("legacy");
-            detectStatus.classList.add("positive");
+            detectStatus.classList.remove("positive");
+            detectStatus.classList.add("negative");
         }
     }
 
