@@ -477,27 +477,7 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
- $('#imageid').each(function() {
-   var elem = $(this);
-
-   // Save current value of element
-   elem.data('oldVal', elem.val());
-
-   // Look for changes in the value
-   elem.bind("propertychange change click keyup input paste", function(event){
-      // If value has changed...
-      if (elem.data('oldVal') != elem.val()) {
-       // Updated stored value
-       elem.data('oldVal', elem.val());
-    
-        summation();
-        loader();
-        showhidebtn();
-     }
-   });
- });   
-</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <script>
     function loader() {
@@ -808,6 +788,26 @@
         document.getElementById('showhide2').style.display = 'inline';
     }
 
+ $('#imageid').each(function() {
+   var elem = $(this);
+
+   // Save current value of element
+   elem.data('oldVal', elem.val());
+
+   // Look for changes in the value
+   elem.bind("propertychange change click keyup input paste", function(event){
+      // If value has changed...
+      if (elem.data('oldVal') != elem.val()) {
+       // Updated stored value
+       elem.data('oldVal', elem.val());
+    
+        summation();
+        loader();
+        showhidebtn();
+     }
+   });
+ });   
+    
 function OneOneTileBorders() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_1x1_Example?scl=1&fmt=png-alpha';
 }
