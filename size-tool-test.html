@@ -409,11 +409,11 @@
     <h1>Banner Size Checker Tool</h1><br>
 
     <div class="loader-container">
-        <label for="fname">Image: </label><input id="imageid" onchange="summation();loader();showhidebtn();">
+        <label for="fname">Image: </label><input id="imageid" onchange="summation();showhidebtn();loader();">
 
-        <button style="display: none;" class="load-img-button" onclick="summation();loader();showhidebtn();">Load Image</button>
+        <button style="display: none;" class="load-img-button" onclick="summation();showhidebtn();loader();">Load Image</button>
 
-        <button class="load-button" onclick="summation();loader();showhidebtn();">Refresh</button>
+        <button class="load-button" onclick="summation();showhidebtn();loader();">Refresh</button>
 
     </div>
     <div class="hide-button-container">
@@ -803,8 +803,8 @@
        elem.data('oldVal', elem.val());
     
         summation();
-        loader();
         showhidebtn();
+        loader();
      }
    });
  });   
