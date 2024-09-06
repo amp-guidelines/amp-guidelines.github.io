@@ -409,9 +409,9 @@
     <div class="loader-container">
         <label for="fname">Image: </label><input id="imageid" onchange="summation()">
 
-        <button class="load-img-button" onclick="summation();loader();showhidebtn();">Load Image</button>
+        <button style="display: none;" class="load-img-button" onclick="summation();loader();showhidebtn();">Load Image</button>
 
-        <button class="load-button" onclick="summation();loader();showhidebtn();">Refresh Overlay</button>
+        <button class="load-button" onclick="summation();loader();showhidebtn();">Refresh</button>
 
     </div>
     <div class="hide-button-container">
@@ -789,7 +789,7 @@
 
 
 
- $('.imageid').each(function() {
+ $('#imageid').each(function() {
    var elem = $(this);
 
    // Save current value of element
@@ -802,11 +802,14 @@
        // Updated stored value
        elem.data('oldVal', elem.val());
     
-       // Do action
-       ....
+        var imageid = document.getElementById('imageid').value;
+        document.getElementById("imageoutput").src = imageid;
+        document.getElementById("imageoutputrender").src = imageid;
      }
    });
  });
+    
+
     
 
 function OneOneTileBorders() {
