@@ -651,7 +651,7 @@
             detectStatus.classList.remove("positive");
             detectStatus.classList.add("legacy");
         } else if (widthV == 900 && heightV == 900) {
-            document.getElementById('detect').innerHTML = "1x1 <span id=\"formats-title\"></span><div class=\"formats-container\"> <button onclick=\"OneOneTileBorders()\">Borders</button> <button onclick=\"OneOneTile()\">Tile</button> <button onclick=\"OneOnePromo()\">Promo</button> <button onclick=\"OneOnePrism()\">Prism</button> <button onclick=\"OneOneAdFlip()\">Ad Flipper</button> <button onclick=\"OneOneCatNav()\">Cat Nav</button> <button onclick=\"OneOneDeptNav()\">Dept Nav</button> <button onclick=\"OneOneShopNav()\">Shop Nav</button> <button onclick=\"OneOneCountdown()\">Dynamic Countdown</button> </div>";
+            document.getElementById('detect').innerHTML = "1x1 <span class=\"toolBtns\" id=\"formats-title\"></span><div class=\"formats-container\"> <button onclick=\"OneOneTileBorders()\">Borders</button> <button onclick=\"OneOneTile()\">Tile</button> <button onclick=\"OneOnePromo()\">Promo</button> <button onclick=\"OneOnePrism()\">Prism</button> <button onclick=\"OneOneAdFlip()\">Ad Flipper</button> <button onclick=\"OneOneCatNav()\">Cat Nav</button> <button onclick=\"OneOneDeptNav()\">Dept Nav</button> <button onclick=\"OneOneShopNav()\">Shop Nav</button> <button onclick=\"OneOneCountdown()\">Dynamic Countdown</button> </div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_1x1_Tile_Border?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -921,5 +921,15 @@ document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene
 function MPUCTA() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_1x1_Tile?scl=1&fmt=png-alpha';
 }
+
+
+var vm = new Vue({
+	 el: '#toolBtns',
+	 data: {
+ 		activeBtn:''
+	 }
+ });
+
+//JS version: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
 
 </script>
