@@ -476,6 +476,7 @@
 
 </div>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 <script>
     function loader() {
@@ -787,9 +788,26 @@
     }
 
 
-const loanSize = document.getElementById('imageid');
-loanSize.addEventListener('input', processPage);
 
+ $('.imageid').each(function() {
+   var elem = $(this);
+
+   // Save current value of element
+   elem.data('oldVal', elem.val());
+
+   // Look for changes in the value
+   elem.bind("propertychange change click keyup input paste", function(event){
+      // If value has changed...
+      if (elem.data('oldVal') != elem.val()) {
+       // Updated stored value
+       elem.data('oldVal', elem.val());
+    
+       // Do action
+       ....
+     }
+   });
+ });
+    
 
 function OneOneTileBorders() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_1x1_Example?scl=1&fmt=png-alpha';
