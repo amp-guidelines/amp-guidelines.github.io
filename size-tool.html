@@ -798,7 +798,7 @@ $('button').on('click', function(){
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 1000 && heightV == 500) {
-            document.getElementById('detect').innerHTML = "2x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"TwoOneBorders();buttonsActive();\">Borders</button> <button class=\"format-button\" onclick=\"TwoOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"TwoOneShopNav();buttonsActive();\">Shop Nav</button> <button class=\"format-button\" onclick=\"TwoOneMPP();buttonsActive();\">MPP</button> <button class=\"format-button\" onclick=\"TwoOnePromoHB();buttonsActive();\">Promo Hybrid</button> </div>";
+            document.getElementById('detect').innerHTML = "2x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"TwoOneBorders();buttonsActive();\">Borders</button> <button class=\"format-button\" onclick=\"TwoOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"TwoOneMPP();buttonsActive();\">MPP</button> <button class=\"format-button\" onclick=\"TwoOnePromoHB();buttonsActive();\">Promo Hybrid</button> <button class=\"format-button\" onclick=\"TwoOneCatNav();buttonsActive();\">Cat Nav</button> <button class=\"format-button\" onclick=\"TwoOneShopNav();buttonsActive();\">Shop Nav</button></div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_2x1?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -852,7 +852,7 @@ $('button').on('click', function(){
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 728 && heightV == 90) {
-            document.getElementById('detect').innerHTML = "Leaderboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"LeaderboardBorders();buttonsActive();\">Borders</button> <button class=\"format-button\" onclick=\"LeaderboardCTA();buttonsActive();\">Dynamic Elements</button> </div>";
+            document.getElementById('detect').innerHTML = "Leaderboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"LeaderboardBorders();buttonsActive();\">Borders</button> <button class=\"format-button\" onclick=\"LeaderboardCTA();buttonsActive();\">Leaderboard</button> <button class=\"format-button\" onclick=\"LeaderboardEAC();buttonsActive();\">Search EAC</button></div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard_Borders?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -1032,6 +1032,11 @@ document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene
 document.getElementById('formats-title').innerHTML = " - Shop Nav";
 document.querySelector(".imagecontainer").style.maxWidth = "1400px"
 }    
+function TwoOneCatNav() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_2x1_ShopNav?scl=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = " - Cat Nav";
+document.querySelector(".imagecontainer").style.maxWidth = "1400px"
+}    
 function TwoOneMPP() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_2x1_MPP_PromoHB?scl=1&fmt=png-alpha';
 document.getElementById('formats-title').innerHTML = " - MPP";
@@ -1112,7 +1117,11 @@ document.getElementById('formats-title').innerHTML = " - Borders";
 }    
 function LeaderboardCTA() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard?scl=1&fmt=png-alpha';
-document.getElementById('formats-title').innerHTML = " - Dynamic Elements";
+document.getElementById('formats-title').innerHTML = " - Leaderboard";
+}   
+function LeaderboardEAC() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard?scl=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = " - Search EAC Desktop";
 }   
         
 //MPU
