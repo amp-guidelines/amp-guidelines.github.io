@@ -789,7 +789,6 @@
     }
 
 
-
  $('#imageid').each(function() {
    var elem = $(this);
 
@@ -803,14 +802,12 @@
        // Updated stored value
        elem.data('oldVal', elem.val());
     
-        var imageid = document.getElementById('imageid').value;
-        document.getElementById("imageoutput").src = imageid;
-        document.getElementById("imageoutputrender").src = imageid;
+        summation();
+        loader();
+        showhidebtn();
      }
    });
  });
-    
-
     
 
 function OneOneTileBorders() {
