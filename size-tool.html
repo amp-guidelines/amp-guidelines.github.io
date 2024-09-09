@@ -209,6 +209,14 @@ opacity: 0.5;
 .formats-container .selected{
 opacity: 1;
 }
+    
+.colors-inverted {
+filter: invert(1);
+}
+#invertcolours {
+background: #f9da62;
+color: #000;
+}
 </style>
 
 <div class="camp-header">
@@ -341,9 +349,15 @@ opacity: 1;
     }
 
     #showhide {
-        margin: 20px;
     }
-
+    
+    .hide-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    }
+    
     .hide-button-container {
         width: 100%;
         text-align: center;
@@ -510,12 +524,13 @@ opacity: 1;
     <div class="hide-button-container">
         <button class="hide" id="showhide" onclick="hideOverlay()">Hide Overlay</button>
         <button class="hide" id="showhide2" onclick="hideImage()">Hide Image</button>
+        <button id="invertcolours">Overlay Colour</button>
     </div>
 
     <img id="imageoutput" src="">
 
     <div class="imagecontainer">
-        <img id="overlayimageoutput" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha">
+        <img id="overlayimageoutput" class="" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha">
         <img id="imageoutputrender" src="https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha" style="visibility:visible;">
     </div>
     <br><br>
@@ -1006,11 +1021,25 @@ $('button').on('click', function(){
         }
     }    
 
+
+    
+// find the button on the page
+let btn = document.querySelector('#invertcolours');
+
+// when clicking the button, toggle the class on <body>
+btn.addEventListener('click', function() {
+  document.querySelector('#overlayimageoutput').classList.toggle('colors-inverted');
+  document.querySelector('#invertcolours').classList.toggle('colors-inverted');
+});
+
+    
     
     function showhidebtn() {
         document.getElementById('showhide').style.display = 'inline';
         document.getElementById('showhide2').style.display = 'inline';
     }
+    
+    
 
  $('#imageid').each(function() {
    var elem = $(this);
