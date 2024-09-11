@@ -528,7 +528,7 @@ text-align: center
 
         <button style="display: none;" class="load-img-button" onclick="summation();showhidebtn();loader();buttonsActive();">Load Image</button>
 
-        <button class="load-button" onclick="summation();showhidebtn();loader();buttonsActive();">Refresh</button>
+        <button id="LoadButton" class="load-button" onclick="summation();showhidebtn();loader();buttonsActive();">Refresh</button>
 
     </div>
     <div class="hide-button-container">
@@ -560,14 +560,29 @@ text-align: center
 
 <script>
 
+
+// Hit Enter To Search
+var input = document.getElementById("imageid");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("LoadButton").click();
+  }
+});
+
+
+// Selected Button
 function buttonsActive() {
 $('button').on('click', function(){
     $('button').removeClass('selected');
     $(this).addClass('selected');
 });
 }
-
-
     
     function loader() {
         //or however you get a handle to the IMG
@@ -1189,5 +1204,4 @@ function BackgroundSkin() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Skin?scl=1&fmt=png-alpha';
 document.getElementById('formats-title').innerHTML = " - Background Skin";
 }    
-
 </script>
