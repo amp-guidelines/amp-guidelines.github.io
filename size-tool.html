@@ -802,7 +802,7 @@ $('button').on('click', function(){
             detectStatus.classList.remove("negative");
             detectStatus.classList.remove("legacy");
             detectStatus.classList.add("positive");
-            document.querySelector(".imagecontainer").style.maxWidth = widthV;
+            document.querySelector(".imagecontainer").style.maxWidth = 600;
         } else if (widthV == 1000 && heightV == 500) {
             document.getElementById('detect').innerHTML = "2x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"TwoOneBorders();buttonsActive();\">Borders</button> <button class=\"format-button\" onclick=\"TwoOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"TwoOneSearchEAC();buttonsActive();\">Search EAC</button> <button class=\"format-button\" onclick=\"TwoOneMPP();buttonsActive();\">MPP</button> <button class=\"format-button\" onclick=\"TwoOnePromoHB();buttonsActive();\">Promo Hybrid</button> <button class=\"format-button\" onclick=\"TwoOneCatNav();buttonsActive();\">Cat Nav</button> <button class=\"format-button\" onclick=\"TwoOneShopNav();buttonsActive();\">Shop Nav</button></div>";
             document.getElementById('detect').style.color = '#538316';
