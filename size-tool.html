@@ -43,7 +43,13 @@
     padding: 0px 20px;
     max-width: 1400px;
     margin: auto;
+    border: #ccc 2px solid;
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
+    padding: 20px;
+
     }
+    
     .camp-header {
     background: #213f02;
     }
@@ -217,6 +223,13 @@ filter: invert(1);
 background: #f9da62;
 color: #000;
 }
+.camp-header-logo {
+text-align: center
+}
+h1 {
+text-align: center
+}
+    
 </style>
 
 <div class="camp-header">
@@ -511,7 +524,7 @@ color: #000;
     <h1>Banner Size Checker Tool</h1><br>
 
     <div class="loader-container">
-        <label for="fname">Image: </label><input id="imageid" onchange="summation();showhidebtn();loader();buttonsActive();">
+        <label for="fname">Image URL: </label><input id="imageid" onchange="summation();showhidebtn();loader();buttonsActive();">
 
         <button style="display: none;" class="load-img-button" onclick="summation();showhidebtn();loader();buttonsActive();">Load Image</button>
 
