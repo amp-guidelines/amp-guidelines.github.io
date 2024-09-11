@@ -744,6 +744,14 @@ $('button').on('click', function(){
             detectStatus.classList.add("legacy");
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV/2;
+        } else if (widthV == 300 && heightV == 100) {
+            document.getElementById('detect').innerHTML = "Legacy - Search EAC";
+            document.getElementById('detect').style.color = '#ff8200';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("positive");
+            detectStatus.classList.add("legacy");
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
         } else if (widthV == 600 && heightV == 2000) {
             document.getElementById('detect').innerHTML = "Legacy - Parascroll";
             document.getElementById('detect').style.color = '#ff8200';
